@@ -1,0 +1,21 @@
+<section class="container d-flex">
+
+  <div class="card w-50">
+    <div class="card-header">
+      <h2 class="text-center">Nova transferência</h2>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="transferir()">
+        <div class="mb-3">
+          <label for="valor" class="form-label">Valor</label>
+          <input type="text" class="form-control" id="valor" [(ngModel)]="valor" name="valor">
+        </div>
+        <div class="mb-3">
+          <label for="destino" class="form-label">Destino</label>
+          <input type="text" class="form-control" id="destino" [(ngModel)]="destino" name="destino">
+        </div>
+        <button type="submit" class="btn btn-primary btn-transferencia w-100">Transferir</button>
+      </form>
+    </div>
+  </div>
+</section>
